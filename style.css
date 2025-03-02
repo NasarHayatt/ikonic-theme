@@ -1,0 +1,49 @@
+/*
+ Theme Name: My Custom Theme
+ Author: Grok 3 (xAI)
+ Description: A custom WordPress theme for Ikonic Solution task.
+ Version: 1.0
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+    }
+    nav ul li ul {
+        position: static;
+    }
+}
